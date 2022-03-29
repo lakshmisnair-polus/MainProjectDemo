@@ -23,7 +23,7 @@ public class Login extends BaseClass {
 		ExtentReportcreateTest(ExcelRead.readStringData(102, 1));
 		loginpage = new LoginPage(driver);
 		String errormsg = loginpage.mandatoryvalidations();
-			if (errormsg.contains(ExcelRead.readStringData(20, 1))) {
+		if (errormsg.contains(ExcelRead.readStringData(20, 1))) {
 			Assert.assertTrue(true, ExcelRead.readStringData(100, 1));
 			extendTestPass(ExcelRead.readStringData(100, 1));
 
@@ -32,7 +32,6 @@ public class Login extends BaseClass {
 			Assert.assertTrue(false, ExcelRead.readStringData(101, 1));
 		}
 	}
-
 
 	@DataProvider(name = "usermail")
 	public Object[][] dp() throws IOException {
@@ -106,12 +105,6 @@ public class Login extends BaseClass {
 		extendReportCreation();
 		ExtentReportcreateTest(ExcelRead.readStringData(7, 1));
 		ExtentReportinfo(ExcelRead.readStringData(8, 1));
-
 	}
-		
+
 }
-
-
-
-//<suiteXmlFile>TestSuites/${xmlfiles}</suiteXmlFile>
-//<suiteXmlFile>TestSuites/testng.xml</suiteXmlFile>

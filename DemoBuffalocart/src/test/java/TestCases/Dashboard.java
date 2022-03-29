@@ -13,7 +13,7 @@ public class Dashboard extends BaseClass {
 
 	DashboardPage dashboardpage;
 
-	@Test(groups = {"Functional"},enabled = true, priority = 5)
+	@Test(groups = { "Functional" }, enabled = true, priority = 5)
 	public void verifyApplicationLogoIsPresent() throws IOException {
 		ExtentReportcreateTest(ExcelRead.readStringData(103, 1));
 		dashboardpage = new DashboardPage(driver);
@@ -27,7 +27,7 @@ public class Dashboard extends BaseClass {
 		}
 	}
 
-	@Test(groups = {"Functional"},enabled = true, priority = 6)
+	@Test(groups = { "Functional" }, enabled = true, priority = 6)
 	public void verifyAllTheTabsArePresent() throws IOException {
 		ExtentReportcreateTest(ExcelRead.readStringData(106, 1));
 		dashboardpage = new DashboardPage(driver);
@@ -41,7 +41,7 @@ public class Dashboard extends BaseClass {
 		}
 	}
 
-	@Test(groups = {"Functional"},enabled = true, priority = 7)
+	@Test(groups = { "Functional" }, enabled = true, priority = 7)
 	public void verifyAllHeaderbuttonsPresent() throws IOException {
 		ExtentReportcreateTest(ExcelRead.readStringData(109, 1));
 		dashboardpage = new DashboardPage(driver);
@@ -54,8 +54,8 @@ public class Dashboard extends BaseClass {
 			Assert.assertTrue(false, ExcelRead.readStringData(111, 1));
 		}
 	}
-	
-	@Test(groups = {"Functional"},enabled = true, priority = 8)
+
+	@Test(groups = { "Functional" }, enabled = true, priority = 8)
 	public void verifyAdminDetails() throws IOException {
 		ExtentReportcreateTest(ExcelRead.readStringData(113, 1));
 		dashboardpage = new DashboardPage(driver);

@@ -14,7 +14,7 @@ public class ClientTab extends BaseClass {
 
 	ClientPage clientpage;
 
-	@Test(groups = { "Functional" }, enabled = false, priority = 9)
+	@Test(groups = { "Regression" }, enabled = true, priority = 9)
 	public void verifyClientTabSubTabs() throws IOException, InterruptedException {
 		ExtentReportcreateTest(ExcelRead.readStringData(116, 1));
 		clientpage = new ClientPage(driver);
@@ -51,6 +51,7 @@ public class ClientTab extends BaseClass {
 		ExtentReportcreateTest(ExcelRead.readStringData(23, 1));
 		implicitlyWait();
 		clientpage.addClients(ExcelRead.readStringData(24, 1));
+		Assert.assertTrue(true, ExcelRead.readStringData(25, 1));
 		extendTestPass(ExcelRead.readStringData(25, 1));
 		ExtentReportinfo(ExcelRead.readStringData(25, 1));
 	}
@@ -118,6 +119,7 @@ public class ClientTab extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		ExtentReportcreateTest(ExcelRead.readStringData(36, 1));
 		clientpage.addingMultipleContacts(ExcelRead.readStringData(37, 1));
+		Assert.assertTrue(true, ExcelRead.readStringData(38, 1));
 		extendTestPass(ExcelRead.readStringData(38, 1));
 	}
 
@@ -148,7 +150,7 @@ public class ClientTab extends BaseClass {
 		clientpage.multiContactsDelete();
 	}
 
-	@Test(groups = { "Functional" }, enabled = false, priority = 18)
+	@Test(groups = { "Regression" }, enabled = true, priority = 18)
 	public void verifyImportClient() throws Exception {
 
 		clientpage = new ClientPage(driver);
@@ -164,5 +166,5 @@ public class ClientTab extends BaseClass {
 			Assert.assertTrue(false, ExcelRead.readStringData(47, 1));
 		}
 	}
-	
+
 }

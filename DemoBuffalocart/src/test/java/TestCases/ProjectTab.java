@@ -16,7 +16,8 @@ public class ProjectTab extends BaseClass {
 	public void verifyAddingNewLabel() throws InterruptedException, IOException {
 
 		projectpage = new ProjectPage(driver);
-		ExtentReportcreateTest(ExcelRead.readStringData(64, 1));
+		Assert.assertTrue(true, ExcelRead.readStringData(64, 1));
+		ExtentReportcreateTest(ExcelRead.readStringData(64, 1));		
 		projectpage.addlabel();
 	}
 
@@ -52,19 +53,8 @@ public class ProjectTab extends BaseClass {
 	public void verifyAddingNewProject() throws InterruptedException, IOException {
 		projectpage = new ProjectPage(driver);
 		ExtentReportcreateTest(ExcelRead.readStringData(71, 1));
-
-		/*
-		 * WebDriverWait wait = new WebDriverWait(driver, 30);
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-		 * "//*[@id=\"title\"]"))) .sendKeys("LaxProject");
-		 * 
-		 * driver.findElement(By.xpath("//*[@id=\"select2-chosen-6\"]")).click();
-		 * driver.findElement(By.xpath("//*[@id=\"s2id_autogen6_search\"]")).sendKeys(
-		 * "successfully"); driver.findElement(By.xpath(
-		 * "//ul[@class='select2-results']//*[text()='successfully']")).click();
-		 * 
-		 */
 		projectpage.addingProject();
+		Thread.sleep(1000);
 		Assert.assertTrue(true, ExcelRead.readStringData(72, 1));
 		extendTestPass(ExcelRead.readStringData(72, 1));
 		ExtentReportinfo(ExcelRead.readStringData(72, 1));

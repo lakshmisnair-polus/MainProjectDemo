@@ -6,6 +6,7 @@
 		<groups>
 			<run>
 				<include name="Functional"></include>
+				<exclude name="Regression"></exclude>
 			</run>
 		</groups>
 		<classes>

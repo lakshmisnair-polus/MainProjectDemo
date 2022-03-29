@@ -12,18 +12,17 @@
       </run>
     </groups>
     <classes>
-      <class name="TestCases.Task">
+      <class name="TestCases.ProjectTab">
         <methods>
-          <include name="verifySearchingNewlyAddedTask"/>
-          <include name="afterSuite"/>
-          <include name="afterTest"/>
+          <include name="verifyDeletingProject"/>
+          <include name="verifyEditingProject"/>
+          <include name="verifyAddingNewLabel"/>
+          <include name="verifyAddProjectMandatoryValidations"/>
+          <include name="verifyAddingNewProject"/>
+          <include name="verifyDeletinglabel"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- TestCases.Task -->
-      <class name="TestCases.ClientTab">
-        <methods>
-          <include name="verifyClientTabSubTabs"/>
-        </methods>
-      </class> <!-- TestCases.ClientTab -->
+      </class> <!-- TestCases.ProjectTab -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

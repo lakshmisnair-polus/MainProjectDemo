@@ -207,9 +207,10 @@ public class ProjectPage extends BaseClass {
 			WebElement we = iter.next();
 			String data = we.getText();
 			if (data.contains(ExcelRead.readStringData(74, 1))) {
-				Thread.sleep(2000);
-				projectedit.click();
-				title.sendKeys(ExcelRead.readStringData(90, 1));
+				Thread.sleep(3000);
+				explicitwaitClick(projectedit);
+				explicitwaitSendkeys(title, ExcelRead.readStringData(90, 1));
+			//	title.sendKeys(ExcelRead.readStringData(90, 1));
 				explicitwaitClick(editsubmit);
 				count++;
 				break;
@@ -221,7 +222,6 @@ public class ProjectPage extends BaseClass {
 	public int deleteProject() throws Exception {
 		
 		Thread.sleep(1000);
-	//	implicitlyWait();
 		List<WebElement> Links = projectdatacheck;
 		int listcounts = Links.size();
 		int count = 0;

@@ -4,23 +4,27 @@
 
 	<test thread-count="5" name="ChromeTest">
 		<parameter name="Browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Functional"></include>
+				<exclude name="Regression"></exclude>
+			</run>
+		</groups>
 		<classes>
 			<class name="TestCases.Login" />
-			<class name="TestCases.Dashboard" />
-			<class name="TestCases.ClientTab" />
-			<class name="TestCases.ProjectTab" />
-			<class name="TestCases.Task" />
 		</classes>
 	</test> <!-- Test -->
 
 	<test thread-count="5" name="FirefoxTest">
 		<parameter name="Browser" value="Firefox"></parameter>
+		<groups>
+			<run>
+				<include name="Functional"></include>
+				<exclude name="Regression"></exclude>
+			</run>
+		</groups>
 		<classes>
 			<class name="TestCases.Login" />
-			<class name="TestCases.Dashboard" />
-			<class name="TestCases.ClientTab" />
-			<class name="TestCases.ProjectTab" />
-			<class name="TestCases.Task" />
 		</classes>
 	</test> <!-- Test -->
 	<listeners>

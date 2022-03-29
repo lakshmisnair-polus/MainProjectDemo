@@ -1,46 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="3" total="30" passed="25">
+<testng-results skipped="0" failed="6" ignored="0" total="11" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="117978" started-at="2022-03-29T17:07:06 IST" finished-at="2022-03-29T17:09:03 IST">
+  <suite name="Suite" duration-ms="58628" started-at="2022-03-29T18:58:12 IST" finished-at="2022-03-29T18:59:11 IST">
     <groups>
       <group name="Functional">
-        <method signature="Login.verifyLoginPageMandatoryValidations()[pri:1, instance:TestCases.Login@dc7df28]" name="verifyLoginPageMandatoryValidations" class="TestCases.Login"/>
-        <method signature="Login.verifyLogin(java.lang.String)[pri:2, instance:TestCases.Login@dc7df28]" name="verifyLogin" class="TestCases.Login"/>
-        <method signature="Login.verifyTitleVerification()[pri:3, instance:TestCases.Login@dc7df28]" name="verifyTitleVerification" class="TestCases.Login"/>
-        <method signature="Login.verifyApplication_UrlVerification()[pri:4, instance:TestCases.Login@dc7df28]" name="verifyApplication_UrlVerification" class="TestCases.Login"/>
-        <method signature="Dashboard.verifyApplicationLogoIsPresent()[pri:5, instance:TestCases.Dashboard@7b4c50bc]" name="verifyApplicationLogoIsPresent" class="TestCases.Dashboard"/>
-        <method signature="Dashboard.verifyAllTheTabsArePresent()[pri:6, instance:TestCases.Dashboard@7b4c50bc]" name="verifyAllTheTabsArePresent" class="TestCases.Dashboard"/>
-        <method signature="Dashboard.verifyAllHeaderbuttonsPresent()[pri:7, instance:TestCases.Dashboard@7b4c50bc]" name="verifyAllHeaderbuttonsPresent" class="TestCases.Dashboard"/>
-        <method signature="Dashboard.verifyAdminDetails()[pri:8, instance:TestCases.Dashboard@7b4c50bc]" name="verifyAdminDetails" class="TestCases.Dashboard"/>
-        <method signature="ClientTab.verifyClientTabSubTabs()[pri:9, instance:TestCases.ClientTab@5884a914]" name="verifyClientTabSubTabs" class="TestCases.ClientTab"/>
-        <method signature="ClientTab.verifyAddClientPopupMandatoryValidations()[pri:10, instance:TestCases.ClientTab@5884a914]" name="verifyAddClientPopupMandatoryValidations" class="TestCases.ClientTab"/>
-        <method signature="ClientTab.verifyAddingNewClient()[pri:11, instance:TestCases.ClientTab@5884a914]" name="verifyAddingNewClient" class="TestCases.ClientTab"/>
-        <method signature="ClientTab.verifySearchingNewlyAddedClient()[pri:12, instance:TestCases.ClientTab@5884a914]" name="verifySearchingNewlyAddedClient" class="TestCases.ClientTab"/>
-        <method signature="ClientTab.verifyEditingClient()[pri:13, instance:TestCases.ClientTab@5884a914]" name="verifyEditingClient" class="TestCases.ClientTab"/>
-        <method signature="ClientTab.verifyDeletingClient()[pri:14, instance:TestCases.ClientTab@5884a914]" name="verifyDeletingClient" class="TestCases.ClientTab"/>
-        <method signature="ClientTab.verifyAddingMultipleContacts()[pri:15, instance:TestCases.ClientTab@5884a914]" name="verifyAddingMultipleContacts" class="TestCases.ClientTab"/>
-        <method signature="ClientTab.verifySearchingMultipleContacts()[pri:16, instance:TestCases.ClientTab@5884a914]" name="verifySearchingMultipleContacts" class="TestCases.ClientTab"/>
-        <method signature="ClientTab.verifyDeletingMultipleContacts()[pri:17, instance:TestCases.ClientTab@5884a914]" name="verifyDeletingMultipleContacts" class="TestCases.ClientTab"/>
-        <method signature="ProjectTab.verifyAddingNewLabel()[pri:19, instance:TestCases.ProjectTab@50378a4]" name="verifyAddingNewLabel" class="TestCases.ProjectTab"/>
-        <method signature="ProjectTab.verifyDeletinglabel()[pri:20, instance:TestCases.ProjectTab@50378a4]" name="verifyDeletinglabel" class="TestCases.ProjectTab"/>
-        <method signature="ProjectTab.verifyAddProjectMandatoryValidations()[pri:21, instance:TestCases.ProjectTab@50378a4]" name="verifyAddProjectMandatoryValidations" class="TestCases.ProjectTab"/>
-        <method signature="ProjectTab.verifyAddingNewProject()[pri:22, instance:TestCases.ProjectTab@50378a4]" name="verifyAddingNewProject" class="TestCases.ProjectTab"/>
-        <method signature="ProjectTab.verifySearchingNewlyAddedProject()[pri:23, instance:TestCases.ProjectTab@50378a4]" name="verifySearchingNewlyAddedProject" class="TestCases.ProjectTab"/>
-        <method signature="ProjectTab.verifyEditingProject()[pri:24, instance:TestCases.ProjectTab@50378a4]" name="verifyEditingProject" class="TestCases.ProjectTab"/>
-        <method signature="ProjectTab.verifyDeletingProject()[pri:25, instance:TestCases.ProjectTab@50378a4]" name="verifyDeletingProject" class="TestCases.ProjectTab"/>
-        <method signature="Task.verifyAddTaskValidations()[pri:28, instance:TestCases.Task@60f00693]" name="verifyAddTaskValidations" class="TestCases.Task"/>
-        <method signature="Task.verifyAddingNewTask()[pri:29, instance:TestCases.Task@60f00693]" name="verifyAddingNewTask" class="TestCases.Task"/>
-        <method signature="Task.verifySearchingNewlyAddedTask()[pri:30, instance:TestCases.Task@60f00693]" name="verifySearchingNewlyAddedTask" class="TestCases.Task"/>
+        <method signature="Login.verifyLoginPageMandatoryValidations()[pri:1, instance:TestCases.Login@3feb2dda]" name="verifyLoginPageMandatoryValidations" class="TestCases.Login"/>
+        <method signature="Login.verifyLogin(java.lang.String)[pri:2, instance:TestCases.Login@3feb2dda]" name="verifyLogin" class="TestCases.Login"/>
+        <method signature="Login.verifyTitleVerification()[pri:3, instance:TestCases.Login@3feb2dda]" name="verifyTitleVerification" class="TestCases.Login"/>
+        <method signature="Login.verifyApplication_UrlVerification()[pri:4, instance:TestCases.Login@3feb2dda]" name="verifyApplication_UrlVerification" class="TestCases.Login"/>
+        <method signature="ProjectTab.verifyAddingNewLabel()[pri:19, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyAddingNewLabel" class="TestCases.ProjectTab"/>
+        <method signature="ProjectTab.verifyDeletinglabel()[pri:20, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyDeletinglabel" class="TestCases.ProjectTab"/>
+        <method signature="ProjectTab.verifyAddProjectMandatoryValidations()[pri:21, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyAddProjectMandatoryValidations" class="TestCases.ProjectTab"/>
+        <method signature="ProjectTab.verifyAddingNewProject()[pri:22, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyAddingNewProject" class="TestCases.ProjectTab"/>
+        <method signature="ProjectTab.verifySearchingNewlyAddedProject()[pri:23, instance:TestCases.ProjectTab@4d14b6c2]" name="verifySearchingNewlyAddedProject" class="TestCases.ProjectTab"/>
+        <method signature="ProjectTab.verifyEditingProject()[pri:24, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyEditingProject" class="TestCases.ProjectTab"/>
+        <method signature="ProjectTab.verifyDeletingProject()[pri:25, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyDeletingProject" class="TestCases.ProjectTab"/>
       </group> <!-- Functional -->
     </groups>
-    <test name="ChromeTest" duration-ms="117978" started-at="2022-03-29T17:07:06 IST" finished-at="2022-03-29T17:09:03 IST">
+    <test name="ChromeTest" duration-ms="58628" started-at="2022-03-29T18:58:12 IST" finished-at="2022-03-29T18:59:11 IST">
       <class name="TestCases.Login">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestCases.Login@dc7df28]" name="beforeSuite" is-config="true" duration-ms="5496" started-at="2022-03-29T17:07:00 IST" finished-at="2022-03-29T17:07:06 IST">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestCases.Login@3feb2dda]" name="beforeSuite" is-config="true" duration-ms="1338" started-at="2022-03-29T18:58:11 IST" finished-at="2022-03-29T18:58:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:TestCases.Login@dc7df28]" name="beforeTest" is-config="true" duration-ms="28312" started-at="2022-03-29T17:07:06 IST" finished-at="2022-03-29T17:07:35 IST">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:TestCases.Login@3feb2dda]" name="beforeTest" is-config="true" duration-ms="16864" started-at="2022-03-29T18:58:12 IST" finished-at="2022-03-29T18:58:29 IST">
           <params>
             <param index="0">
               <value>
@@ -51,22 +35,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="verifyLoginPageMandatoryValidations()[pri:1, instance:TestCases.Login@dc7df28]" name="verifyLoginPageMandatoryValidations" duration-ms="790" started-at="2022-03-29T17:07:35 IST" finished-at="2022-03-29T17:07:36 IST">
+        <test-method status="PASS" signature="verifyLoginPageMandatoryValidations()[pri:1, instance:TestCases.Login@3feb2dda]" name="verifyLoginPageMandatoryValidations" duration-ms="747" started-at="2022-03-29T18:58:29 IST" finished-at="2022-03-29T18:58:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageMandatoryValidations -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.Login@dc7df28]" name="tearDown" is-config="true" duration-ms="3" started-at="2022-03-29T17:07:36 IST" finished-at="2022-03-29T17:07:36 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.Login@3feb2dda]" name="tearDown" is-config="true" duration-ms="1353" started-at="2022-03-29T18:58:30 IST" finished-at="2022-03-29T18:58:32 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginPageMandatoryValidations status=SUCCESS method=Login.verifyLoginPageMandatoryValidations()[pri:1, instance:TestCases.Login@dc7df28] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginPageMandatoryValidations status=SUCCESS method=Login.verifyLoginPageMandatoryValidations()[pri:1, instance:TestCases.Login@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String)[pri:2, instance:TestCases.Login@dc7df28]" name="verifyLogin" duration-ms="3191" started-at="2022-03-29T17:07:36 IST" data-provider="usermail" finished-at="2022-03-29T17:07:39 IST">
+        <test-method status="PASS" signature="verifyLogin(java.lang.String)[pri:2, instance:TestCases.Login@3feb2dda]" name="verifyLogin" duration-ms="5222" started-at="2022-03-29T18:58:32 IST" data-provider="usermail" finished-at="2022-03-29T18:58:37 IST">
           <params>
             <param index="0">
               <value>
@@ -77,41 +61,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.Login@dc7df28]" name="tearDown" is-config="true" duration-ms="4" started-at="2022-03-29T17:07:39 IST" finished-at="2022-03-29T17:07:39 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.Login@3feb2dda]" name="tearDown" is-config="true" duration-ms="187" started-at="2022-03-29T18:58:38 IST" finished-at="2022-03-29T18:58:38 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=Login.verifyLogin(java.lang.String)[pri:2, instance:TestCases.Login@dc7df28] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=Login.verifyLogin(java.lang.String)[pri:2, instance:TestCases.Login@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyTitleVerification()[pri:3, instance:TestCases.Login@dc7df28]" name="verifyTitleVerification" duration-ms="63" started-at="2022-03-29T17:07:39 IST" finished-at="2022-03-29T17:07:39 IST">
+        <test-method status="PASS" signature="verifyTitleVerification()[pri:3, instance:TestCases.Login@3feb2dda]" name="verifyTitleVerification" duration-ms="828" started-at="2022-03-29T18:58:38 IST" finished-at="2022-03-29T18:58:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleVerification -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.Login@dc7df28]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-03-29T17:07:39 IST" finished-at="2022-03-29T17:07:39 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.Login@3feb2dda]" name="tearDown" is-config="true" duration-ms="120" started-at="2022-03-29T18:58:39 IST" finished-at="2022-03-29T18:58:39 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTitleVerification status=SUCCESS method=Login.verifyTitleVerification()[pri:3, instance:TestCases.Login@dc7df28] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTitleVerification status=SUCCESS method=Login.verifyTitleVerification()[pri:3, instance:TestCases.Login@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyApplication_UrlVerification()[pri:4, instance:TestCases.Login@dc7df28]" name="verifyApplication_UrlVerification" duration-ms="64" started-at="2022-03-29T17:07:39 IST" finished-at="2022-03-29T17:07:39 IST">
+        <test-method status="PASS" signature="verifyApplication_UrlVerification()[pri:4, instance:TestCases.Login@3feb2dda]" name="verifyApplication_UrlVerification" duration-ms="58" started-at="2022-03-29T18:58:39 IST" finished-at="2022-03-29T18:58:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApplication_UrlVerification -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.Login@dc7df28]" name="tearDown" is-config="true" duration-ms="3" started-at="2022-03-29T17:07:39 IST" finished-at="2022-03-29T17:07:39 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.Login@3feb2dda]" name="tearDown" is-config="true" duration-ms="104" started-at="2022-03-29T18:58:39 IST" finished-at="2022-03-29T18:58:39 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyApplication_UrlVerification status=SUCCESS method=Login.verifyApplication_UrlVerification()[pri:4, instance:TestCases.Login@dc7df28] output={null}]]]>
+                <![CDATA[[TestResult name=verifyApplication_UrlVerification status=SUCCESS method=Login.verifyApplication_UrlVerification()[pri:4, instance:TestCases.Login@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
@@ -119,93 +103,30 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.Login -->
-      <class name="TestCases.Task">
-        <test-method status="PASS" signature="verifyAddTaskValidations()[pri:28, instance:TestCases.Task@60f00693]" name="verifyAddTaskValidations" duration-ms="3813" started-at="2022-03-29T17:08:42 IST" finished-at="2022-03-29T17:08:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTaskValidations -->
-        <test-method status="PASS" signature="verifyAddingNewTask()[pri:29, instance:TestCases.Task@60f00693]" name="verifyAddingNewTask" duration-ms="11700" started-at="2022-03-29T17:08:46 IST" finished-at="2022-03-29T17:08:58 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingNewTask -->
-        <test-method status="FAIL" signature="verifySearchingNewlyAddedTask()[pri:30, instance:TestCases.Task@60f00693]" name="verifySearchingNewlyAddedTask" duration-ms="571" started-at="2022-03-29T17:08:58 IST" finished-at="2022-03-29T17:08:59 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Task not added in table expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Task not added in table expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at TestCases.Task.verifySearchingNewlyAddedTask(Task.java:82)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchingNewlyAddedTask -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestCases.Task@60f00693]" name="afterTest" is-config="true" duration-ms="3986" started-at="2022-03-29T17:09:00 IST" finished-at="2022-03-29T17:09:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestCases.Task@60f00693]" name="afterSuite" is-config="true" duration-ms="1922" started-at="2022-03-29T17:09:07 IST" finished-at="2022-03-29T17:09:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- TestCases.Task -->
-      <class name="TestCases.ClientTab">
-        <test-method status="FAIL" signature="verifyClientTabSubTabs()[pri:9, instance:TestCases.ClientTab@5884a914]" name="verifyClientTabSubTabs" duration-ms="200" started-at="2022-03-29T17:07:43 IST" finished-at="2022-03-29T17:07:44 IST">
+      <class name="TestCases.ProjectTab">
+        <test-method status="FAIL" signature="verifyAddingNewLabel()[pri:19, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyAddingNewLabel" duration-ms="3010" started-at="2022-03-29T18:58:39 IST" finished-at="2022-03-29T18:58:42 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Clients')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="title"]"}
   (Session info: chrome=99.0.4844.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 43a46ce77b32ab5b000d19fd4c712b31
-*** Element info: {Using=xpath, value=//a[contains(text(),'Clients')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905
+*** Element info: {Using=xpath, value=//*[@id="title"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Clients')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="title"]"}
   (Session info: chrome=99.0.4844.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 43a46ce77b32ab5b000d19fd4c712b31
-*** Element info: {Using=xpath, value=//a[contains(text(),'Clients')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905
+*** Element info: {Using=xpath, value=//*[@id="title"]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -222,9 +143,9 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
-at Pages.ClientPage.subTabsPresent(ClientPage.java:196)
-at TestCases.ClientTab.verifyClientTabSubTabs(ClientTab.java:21)
+at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+at Pages.ProjectPage.addlabel(ProjectPage.java:132)
+at TestCases.ProjectTab.verifyAddingNewLabel(ProjectTab.java:20)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -258,87 +179,499 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyClientTabSubTabs -->
-        <test-method status="PASS" signature="verifyAddClientPopupMandatoryValidations()[pri:10, instance:TestCases.ClientTab@5884a914]" name="verifyAddClientPopupMandatoryValidations" duration-ms="6156" started-at="2022-03-29T17:07:45 IST" finished-at="2022-03-29T17:07:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddClientPopupMandatoryValidations -->
-        <test-method status="PASS" signature="verifyAddingNewClient()[pri:11, instance:TestCases.ClientTab@5884a914]" name="verifyAddingNewClient" duration-ms="4836" started-at="2022-03-29T17:07:51 IST" finished-at="2022-03-29T17:07:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingNewClient -->
-        <test-method status="PASS" signature="verifySearchingNewlyAddedClient()[pri:12, instance:TestCases.ClientTab@5884a914]" name="verifySearchingNewlyAddedClient" duration-ms="4871" started-at="2022-03-29T17:07:56 IST" finished-at="2022-03-29T17:08:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchingNewlyAddedClient -->
-        <test-method status="PASS" signature="verifyEditingClient()[pri:13, instance:TestCases.ClientTab@5884a914]" name="verifyEditingClient" duration-ms="3183" started-at="2022-03-29T17:08:01 IST" finished-at="2022-03-29T17:08:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEditingClient -->
-        <test-method status="PASS" signature="verifyDeletingClient()[pri:14, instance:TestCases.ClientTab@5884a914]" name="verifyDeletingClient" duration-ms="4845" started-at="2022-03-29T17:08:04 IST" finished-at="2022-03-29T17:08:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeletingClient -->
-        <test-method status="PASS" signature="verifyAddingMultipleContacts()[pri:15, instance:TestCases.ClientTab@5884a914]" name="verifyAddingMultipleContacts" duration-ms="10368" started-at="2022-03-29T17:08:09 IST" finished-at="2022-03-29T17:08:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddingMultipleContacts -->
-        <test-method status="PASS" signature="verifySearchingMultipleContacts()[pri:16, instance:TestCases.ClientTab@5884a914]" name="verifySearchingMultipleContacts" duration-ms="3178" started-at="2022-03-29T17:08:19 IST" finished-at="2022-03-29T17:08:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchingMultipleContacts -->
-        <test-method status="PASS" signature="verifyDeletingMultipleContacts()[pri:17, instance:TestCases.ClientTab@5884a914]" name="verifyDeletingMultipleContacts" duration-ms="392" started-at="2022-03-29T17:08:22 IST" finished-at="2022-03-29T17:08:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeletingMultipleContacts -->
-      </class> <!-- TestCases.ClientTab -->
-      <class name="TestCases.Dashboard">
-        <test-method status="PASS" signature="verifyApplicationLogoIsPresent()[pri:5, instance:TestCases.Dashboard@7b4c50bc]" name="verifyApplicationLogoIsPresent" duration-ms="179" started-at="2022-03-29T17:07:39 IST" finished-at="2022-03-29T17:07:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyApplicationLogoIsPresent -->
-        <test-method status="PASS" signature="verifyAllTheTabsArePresent()[pri:6, instance:TestCases.Dashboard@7b4c50bc]" name="verifyAllTheTabsArePresent" duration-ms="969" started-at="2022-03-29T17:07:39 IST" finished-at="2022-03-29T17:07:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllTheTabsArePresent -->
-        <test-method status="PASS" signature="verifyAllHeaderbuttonsPresent()[pri:7, instance:TestCases.Dashboard@7b4c50bc]" name="verifyAllHeaderbuttonsPresent" duration-ms="371" started-at="2022-03-29T17:07:40 IST" finished-at="2022-03-29T17:07:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllHeaderbuttonsPresent -->
-        <test-method status="PASS" signature="verifyAdminDetails()[pri:8, instance:TestCases.Dashboard@7b4c50bc]" name="verifyAdminDetails" duration-ms="2540" started-at="2022-03-29T17:07:41 IST" finished-at="2022-03-29T17:07:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAdminDetails -->
-      </class> <!-- TestCases.Dashboard -->
-      <class name="TestCases.ProjectTab">
-        <test-method status="PASS" signature="verifyAddingNewLabel()[pri:19, instance:TestCases.ProjectTab@50378a4]" name="verifyAddingNewLabel" duration-ms="4404" started-at="2022-03-29T17:08:23 IST" finished-at="2022-03-29T17:08:27 IST">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- verifyAddingNewLabel -->
-        <test-method status="PASS" signature="verifyDeletinglabel()[pri:20, instance:TestCases.ProjectTab@50378a4]" name="verifyDeletinglabel" duration-ms="410" started-at="2022-03-29T17:08:27 IST" finished-at="2022-03-29T17:08:27 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.ProjectTab@4d14b6c2]" name="tearDown" is-config="true" duration-ms="761" started-at="2022-03-29T18:58:43 IST" finished-at="2022-03-29T18:58:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingNewLabel status=FAILURE method=ProjectTab.verifyAddingNewLabel()[pri:19, instance:TestCases.ProjectTab@4d14b6c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="verifyDeletinglabel()[pri:20, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyDeletinglabel" duration-ms="185" started-at="2022-03-29T18:58:44 IST" finished-at="2022-03-29T18:58:44 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="labels-form"]/div[2]/button[3]"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905
+*** Element info: {Using=xpath, value=//*[@id="labels-form"]/div[2]/button[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="labels-form"]/div[2]/button[3]"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905
+*** Element info: {Using=xpath, value=//*[@id="labels-form"]/div[2]/button[3]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at Pages.ProjectPage.deletelabel(ProjectPage.java:154)
+at TestCases.ProjectTab.verifyDeletinglabel(ProjectTab.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeletinglabel -->
-        <test-method status="PASS" signature="verifyAddProjectMandatoryValidations()[pri:21, instance:TestCases.ProjectTab@50378a4]" name="verifyAddProjectMandatoryValidations" duration-ms="4033" started-at="2022-03-29T17:08:27 IST" finished-at="2022-03-29T17:08:31 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.ProjectTab@4d14b6c2]" name="tearDown" is-config="true" duration-ms="638" started-at="2022-03-29T18:58:44 IST" finished-at="2022-03-29T18:58:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeletinglabel status=FAILURE method=ProjectTab.verifyDeletinglabel()[pri:20, instance:TestCases.ProjectTab@4d14b6c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="verifyAddProjectMandatoryValidations()[pri:21, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyAddProjectMandatoryValidations" duration-ms="1209" started-at="2022-03-29T18:58:45 IST" finished-at="2022-03-29T18:58:46 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="menu-text ">...</span> is not clickable at point (86, 229). Other element would receive the click: <div class="modal fade show" id="ajaxModal" role="dialog" aria-labelledby="ajaxModal" data-bs-focus="false" aria-modal="true" style="display: block;">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="menu-text ">...</span> is not clickable at point (86, 229). Other element would receive the click: <div class="modal fade show" id="ajaxModal" role="dialog" aria-labelledby="ajaxModal" data-bs-focus="false" aria-modal="true" style="display: block;">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at Pages.ProjectPage.projectMandatoryValidation(ProjectPage.java:161)
+at TestCases.ProjectTab.verifyAddProjectMandatoryValidations(ProjectTab.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddProjectMandatoryValidations -->
-        <test-method status="PASS" signature="verifyAddingNewProject()[pri:22, instance:TestCases.ProjectTab@50378a4]" name="verifyAddingNewProject" duration-ms="2962" started-at="2022-03-29T17:08:31 IST" finished-at="2022-03-29T17:08:34 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.ProjectTab@4d14b6c2]" name="tearDown" is-config="true" duration-ms="563" started-at="2022-03-29T18:58:47 IST" finished-at="2022-03-29T18:58:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddProjectMandatoryValidations status=FAILURE method=ProjectTab.verifyAddProjectMandatoryValidations()[pri:21, instance:TestCases.ProjectTab@4d14b6c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="verifyAddingNewProject()[pri:22, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyAddingNewProject" duration-ms="12576" started-at="2022-03-29T18:58:47 IST" finished-at="2022-03-29T18:59:00 IST">
+          <exception class="org.openqa.selenium.json.JsonException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+at java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+at org.openqa.selenium.json.Json.toJson(Json.java:42)
+at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at Pages.ProjectPage.addingProject(ProjectPage.java:183)
+at TestCases.ProjectTab.verifyAddingNewProject(ProjectTab.java:55)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+at org.openqa.selenium.json.Json.toJson(Json.java:44)
+... 37 more
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+... 49 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="s2id_autogen10"]"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905
+*** Element info: {Using=xpath, value=//*[@id="s2id_autogen10"]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy19.getWrappedElement(Unknown Source)
+at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+... 54 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddingNewProject -->
-        <test-method status="PASS" signature="verifySearchingNewlyAddedProject()[pri:23, instance:TestCases.ProjectTab@50378a4]" name="verifySearchingNewlyAddedProject" duration-ms="675" started-at="2022-03-29T17:08:34 IST" finished-at="2022-03-29T17:08:35 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.ProjectTab@4d14b6c2]" name="tearDown" is-config="true" duration-ms="592" started-at="2022-03-29T18:59:00 IST" finished-at="2022-03-29T18:59:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddingNewProject status=FAILURE method=ProjectTab.verifyAddingNewProject()[pri:22, instance:TestCases.ProjectTab@4d14b6c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="verifySearchingNewlyAddedProject()[pri:23, instance:TestCases.ProjectTab@4d14b6c2]" name="verifySearchingNewlyAddedProject" duration-ms="602" started-at="2022-03-29T18:59:01 IST" finished-at="2022-03-29T18:59:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchingNewlyAddedProject -->
-        <test-method status="PASS" signature="verifyEditingProject()[pri:24, instance:TestCases.ProjectTab@50378a4]" name="verifyEditingProject" duration-ms="3414" started-at="2022-03-29T17:08:35 IST" finished-at="2022-03-29T17:08:39 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.ProjectTab@4d14b6c2]" name="tearDown" is-config="true" duration-ms="90" started-at="2022-03-29T18:59:02 IST" finished-at="2022-03-29T18:59:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchingNewlyAddedProject status=SUCCESS method=ProjectTab.verifySearchingNewlyAddedProject()[pri:23, instance:TestCases.ProjectTab@4d14b6c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="verifyEditingProject()[pri:24, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyEditingProject" duration-ms="4395" started-at="2022-03-29T18:59:02 IST" finished-at="2022-03-29T18:59:06 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="#" class="edit" title="Edit project" data-post-id="470" data-act="ajax-modal" data-title="Edit project" data-action-url="https://buffalocart.com/demo/crm/index.php/projects/modal_form">...</a> is not clickable at point (1262, 306). Other element would receive the click: <div class="modal fade show" id="ajaxModal" role="dialog" aria-labelledby="ajaxModal" data-bs-focus="false" aria-modal="true" style="display: block;">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="edit" title="Edit project" data-post-id="470" data-act="ajax-modal" data-title="Edit project" data-action-url="https://buffalocart.com/demo/crm/index.php/projects/modal_form">...</a> is not clickable at point (1262, 306). Other element would receive the click: <div class="modal fade show" id="ajaxModal" role="dialog" aria-labelledby="ajaxModal" data-bs-focus="false" aria-modal="true" style="display: block;">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at Utilities.BaseClass.explicitwaitClick(BaseClass.java:142)
+at Pages.ProjectPage.editProject(ProjectPage.java:211)
+at TestCases.ProjectTab.verifyEditingProject(ProjectTab.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditingProject -->
-        <test-method status="PASS" signature="verifyDeletingProject()[pri:25, instance:TestCases.ProjectTab@50378a4]" name="verifyDeletingProject" duration-ms="3802" started-at="2022-03-29T17:08:39 IST" finished-at="2022-03-29T17:08:42 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.ProjectTab@4d14b6c2]" name="tearDown" is-config="true" duration-ms="396" started-at="2022-03-29T18:59:06 IST" finished-at="2022-03-29T18:59:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditingProject status=FAILURE method=ProjectTab.verifyEditingProject()[pri:24, instance:TestCases.ProjectTab@4d14b6c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="verifyDeletingProject()[pri:25, instance:TestCases.ProjectTab@4d14b6c2]" name="verifyDeletingProject" duration-ms="2400" started-at="2022-03-29T18:59:07 IST" finished-at="2022-03-29T18:59:09 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="#" title="Delete project" class="delete" data-id="470" data-action-url="https://buffalocart.com/demo/crm/index.php/projects/delete" data-action="delete-confirmation">...</a> is not clickable at point (1300, 306). Other element would receive the click: <div class="modal fade show" id="ajaxModal" role="dialog" aria-labelledby="ajaxModal" data-bs-focus="false" aria-modal="true" style="display: block;">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" title="Delete project" class="delete" data-id="470" data-action-url="https://buffalocart.com/demo/crm/index.php/projects/delete" data-action="delete-confirmation">...</a> is not clickable at point (1300, 306). Other element would receive the click: <div class="modal fade show" id="ajaxModal" role="dialog" aria-labelledby="ajaxModal" data-bs-focus="false" aria-modal="true" style="display: block;">...</div>
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4RLKFEF', ip: '10.212.134.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3e6aef2e3c3c75ca7b166b9f0c2905
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at Utilities.BaseClass.explicitwaitClick(BaseClass.java:142)
+at Pages.ProjectPage.deleteProject(ProjectPage.java:237)
+at TestCases.ProjectTab.verifyDeletingProject(ProjectTab.java:99)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeletingProject -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TestCases.ProjectTab@4d14b6c2]" name="tearDown" is-config="true" duration-ms="360" started-at="2022-03-29T18:59:10 IST" finished-at="2022-03-29T18:59:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeletingProject status=FAILURE method=ProjectTab.verifyDeletingProject()[pri:25, instance:TestCases.ProjectTab@4d14b6c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- TestCases.ProjectTab -->
     </test> <!-- ChromeTest -->
   </suite> <!-- Suite -->

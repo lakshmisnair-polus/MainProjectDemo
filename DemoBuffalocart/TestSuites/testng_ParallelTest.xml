@@ -4,6 +4,12 @@
 
 	<test thread-count="1" name="ChromeTest">
 		<parameter name="Browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Functional"></include>
+				<exclude name="Regression"></exclude>
+			</run>
+		</groups>
 		<classes>
 			<class name="TestCases.Login" />
 			<class name="TestCases.Dashboard" />
@@ -15,6 +21,12 @@
 
 	<test thread-count="1" name="FirefoxTest">
 		<parameter name="Browser" value="Firefox"></parameter>
+		<groups>
+			<run>
+				<include name="Functional"></include>
+				<exclude name="Regression"></exclude>
+			</run>
+		</groups>
 		<classes>
 			<class name="TestCases.Login" />
 			<class name="TestCases.Dashboard" />

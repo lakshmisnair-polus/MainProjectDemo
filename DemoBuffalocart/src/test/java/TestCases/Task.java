@@ -15,7 +15,7 @@ import Utilities.ExcelRead;
 public class Task extends BaseClass {
 	TaskPage taskpage;
 
-	@Test(groups = { "Functional" }, enabled = false, priority = 26)
+	@Test(groups = { "Regression" }, enabled = true, priority = 26)
 	public void verifyTaskSubTabsPresent() throws InterruptedException, IOException {
 
 		taskpage = new TaskPage(driver);
@@ -30,7 +30,7 @@ public class Task extends BaseClass {
 		}
 	}
 
-	@Test(groups = { "Functional" }, enabled = false, priority = 27)
+	@Test(groups = { "Regression" }, enabled = true, priority = 27)
 	public void verifyTaskTabsHeaderbtnsPresent() throws InterruptedException, IOException {
 
 		taskpage = new TaskPage(driver);
@@ -64,7 +64,8 @@ public class Task extends BaseClass {
 	public void verifyAddingNewTask() throws AWTException, Exception {
 
 		taskpage = new TaskPage(driver);
-		ExtentReportcreateTest(ExcelRead.readStringData(94, 1));
+		Assert.assertTrue(true, ExcelRead.readStringData(94, 1));
+		ExtentReportcreateTest(ExcelRead.readStringData(94, 1));		
 		taskpage.addTask();
 	}
 
