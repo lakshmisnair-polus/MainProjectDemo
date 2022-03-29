@@ -40,14 +40,14 @@ public class BaseClass {
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	
-	public WebDriver launchBrowser(String url) throws InterruptedException {
+	public WebDriver launchBrowser1(String url) throws InterruptedException {
 
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		implicitlyWait();
 		return driver;
 	}
 
@@ -112,18 +112,14 @@ public class BaseClass {
 
 	public static String getScreenshot(WebDriver driver) {
 		TakesScreenshot ts = (TakesScreenshot) driver;
-
 		File src = ts.getScreenshotAs(OutputType.FILE);
-
 		String path = System.getProperty("user.dir") + "/Screenshot/" + System.currentTimeMillis() + ".png";
-
 		File destination = new File(path);
 		try {
 			FileUtils.copyFile(src, destination);
 		} catch (IOException e) {
 			System.out.println("Capture Failed " + e.getMessage());
 		}
-
 		return path;
 	}
 	@AfterMethod(groups = { "Functional" },alwaysRun=true)
@@ -186,7 +182,7 @@ public class BaseClass {
 		value.click();
 	}
 
-	public void screenshotCommon(WebDriver driver) throws Exception {
+	public void screenshotCommon(WebDriver driver) throws IOException {
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
 		File DestFile = new File("src\\test\\resources\\Screenshots\\Test " + timestamp() + ".png");
@@ -199,7 +195,7 @@ public class BaseClass {
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
 
 		Robot robot = new Robot();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		implicitlyWait();
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 		Thread.sleep(1000);
@@ -208,8 +204,5 @@ public class BaseClass {
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(1000);
-	}
-	
-	
-
+	}	
 }

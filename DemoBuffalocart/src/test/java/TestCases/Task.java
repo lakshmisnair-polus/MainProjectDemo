@@ -70,7 +70,7 @@ public class Task extends BaseClass {
 	}
 
 	@Test(groups = { "Functional" }, enabled = true, priority = 30)
-	public void verifySearchingNewlyAddedTask() throws InterruptedException, IOException {
+	public void verifySearchingNewlyAddedTask() throws IOException {
 
 		taskpage = new TaskPage(driver);
 		ExtentReportcreateTest(ExcelRead.readStringData(95, 1));
@@ -82,6 +82,7 @@ public class Task extends BaseClass {
 			extendTestFail(ExcelRead.readStringData(97, 1));
 			Assert.assertTrue(false, ExcelRead.readStringData(97, 1));
 		}
+		screenshotCommon(driver);
 	}
 
 	@AfterTest(groups = { "Functional" })
