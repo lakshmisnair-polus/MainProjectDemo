@@ -278,15 +278,12 @@ public class ClientPage extends BaseClass {
 
 	public int deleteClients(String Clientname) throws InterruptedException, IOException {
 
-		// explicitwaitSendkeysClear(clientssearch);
-		// explicitwaitSendkeys(clientssearch, Clientname);
 		implicitlyWait();
 		int count = 0;
 		WebElement name = null;
 		for (int i = 2; i <= 10; i++) {
 			name = driver.findElement(By.xpath("//table/tbody/tr[" + i + "]/td[2]"));
-			if (name.getText().contains("PSGTest")) {
-
+			if (name.getText().contains("PSGTest")) {			
 				Thread.sleep(1000);
 				// explicitwaitClick(clientdelete);
 				// explicitwaitClick(clientdeletepopup);

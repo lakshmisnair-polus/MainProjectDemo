@@ -2,7 +2,6 @@ package TestCases;
 
 import java.awt.AWTException;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
@@ -86,13 +85,13 @@ public class Task extends BaseClass {
 
 	@AfterTest(groups = { "Functional" })
 	public void afterTest() {
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		implicitlyWait();
 		driver.close();
+		driver.quit();	
 	}
 
 	@AfterSuite(groups = { "Functional" })
 	public void afterSuite() {
 		extent.flush();
-
 	}
 }

@@ -6,10 +6,12 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -20,9 +22,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.google.common.io.Files;
@@ -34,7 +39,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static ExtentReports extent;
 	public static ExtentTest test;
-
+	
 	public WebDriver launchBrowser(String url) throws InterruptedException {
 
 		WebDriverManager.chromedriver().setup();
@@ -47,46 +52,20 @@ public class BaseClass {
 	}
 
 	public WebDriver launchBrowser1(String browser, String url) throws InterruptedException {
-/*
-		switch (browser) {
 
-		case "Chrome":
+		if (browser.contains("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
-			break;
-		case "Firefox":
+		} else if (browser.contains("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
-			break;
-		case "IE":
+		} else if (browser == "IE") {
 			System.setProperty("webdriver.ie.driver", "src\\test\\resources\\Drivers\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
-			break;
-		default:
+		} else {
 			System.out.println("Invalid Browser");
-			break;
+		}
 
-		}*/
-		
-	
-		if(browser.contains("Chrome"))
-	{
-		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-	}
-				else if(browser.contains("Firefox"))
-				{
-		System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\Drivers\\geckodriver.exe");
-		driver = new FirefoxDriver();
-	}
-	else if(browser== "IE") {
-		System.setProperty("webdriver.ie.driver", "src\\test\\resources\\Drivers\\IEDriverServer.exe");
-		driver = new InternetExplorerDriver();
-	}
-	else {
-		System.out.println("Invalid Browser");
-	}
-		
 		driver.get(url);
 		driver.manage().window().maximize();
 		Thread.sleep(1000);
@@ -97,14 +76,11 @@ public class BaseClass {
 		return driver;
 	}
 
-	public void screenshotfailed(WebDriver driver,String test) throws Exception {
+	public void screenshotfailed(WebDriver driver, String test) throws Exception {
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		File DestFile = new File(
-				"src\\test\\resources\\Screenshots\\"
-						+test+ timestamp() + ".png");
+		File DestFile = new File("src\\test\\resources\\Screenshots\\" + test + timestamp() + ".png");
 		Files.copy(SrcFile, DestFile);
-
 	}
 
 	public static String timestamp() {
@@ -125,13 +101,40 @@ public class BaseClass {
 	public void ExtentReportinfo(String createtest) {
 		test.log(Status.INFO, createtest);
 	}
-	
+
 	public void extendTestPass(String passString) {
 		test.pass("Testing Passed" + passString);
 	}
 
 	public void extendTestFail(String passString) {
 		test.fail("Testing Failed" + passString);
+	}
+
+	public static String getScreenshot(WebDriver driver) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+
+		File src = ts.getScreenshotAs(OutputType.FILE);
+
+		String path = System.getProperty("user.dir") + "/Screenshot/" + System.currentTimeMillis() + ".png";
+
+		File destination = new File(path);
+		try {
+			FileUtils.copyFile(src, destination);
+		} catch (IOException e) {
+			System.out.println("Capture Failed " + e.getMessage());
+		}
+
+		return path;
+	}
+	@AfterMethod(groups = { "Functional" },alwaysRun=true)
+	public void tearDown(ITestResult result) throws IOException
+	{		
+		if(result.getStatus()==ITestResult.FAILURE)
+		{
+			String temp=getScreenshot(driver);			
+			test.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+		}
+		extent.flush();
 	}
 
 	public void explicitwaitClick(WebElement element) {
@@ -154,6 +157,7 @@ public class BaseClass {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.visibilityOf(element)).click();
 	}
+
 	public void implicitlyWait() {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
@@ -162,10 +166,10 @@ public class BaseClass {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 	}
-	
+
 	public String JavascriptGetText(WebElement element) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		String value=(String) executor.executeScript("arguments[0].getText();", element);
+		String value = (String) executor.executeScript("arguments[0].getText();", element);
 		return value;
 	}
 
@@ -181,18 +185,17 @@ public class BaseClass {
 		value.sendKeys(value1);
 		value.click();
 	}
+
 	public void screenshotCommon(WebDriver driver) throws Exception {
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		File DestFile = new File(
-				"src\\test\\resources\\Screenshots\\Test "
-						+ timestamp() + ".png");
+		File DestFile = new File("src\\test\\resources\\Screenshots\\Test " + timestamp() + ".png");
 		Files.copy(SrcFile, DestFile);
 
 	}
+
 	public void fileUploadftn(String path) throws AWTException, InterruptedException {
-		StringSelection s = new StringSelection(
-				path);
+		StringSelection s = new StringSelection(path);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
 
 		Robot robot = new Robot();
@@ -206,5 +209,7 @@ public class BaseClass {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(1000);
 	}
+	
+	
 
 }
