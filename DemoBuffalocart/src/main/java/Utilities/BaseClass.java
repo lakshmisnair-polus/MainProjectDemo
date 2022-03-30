@@ -103,11 +103,11 @@ public class BaseClass {
 	}
 
 	public void extendTestPass(String passString) {
-		test.pass("Testing Passed" + passString);
+		test.pass("Testing Passed " + passString);
 	}
 
 	public void extendTestFail(String passString) {
-		test.fail("Testing Failed" + passString);
+		test.fail("Testing Failed " + passString);
 	}
 
 	public String getScreenshot(WebDriver driver) {

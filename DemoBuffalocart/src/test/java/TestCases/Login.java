@@ -3,7 +3,6 @@ package TestCases;
 import java.io.IOException;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -24,7 +23,7 @@ public class Login extends BaseClass {
 		ExtentReportcreateTest(ExcelRead.readStringData(102, 1));
 		loginpage = new LoginPage(driver);
 		String errormsg = loginpage.mandatoryvalidations();
-		if (errormsg.contains(ExcelRead.readStringData(22, 1))) {
+		if (errormsg.contains(ExcelRead.readStringData(20, 1))) {
 			Assert.assertTrue(true, ExcelRead.readStringData(100, 1));
 			extendTestPass(ExcelRead.readStringData(100, 1));
 

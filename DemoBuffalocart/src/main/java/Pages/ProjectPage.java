@@ -210,7 +210,6 @@ public class ProjectPage extends BaseClass {
 				Thread.sleep(3000);
 				explicitwaitClick(projectedit);
 				explicitwaitSendkeys(title, ExcelRead.readStringData(90, 1));
-			//	title.sendKeys(ExcelRead.readStringData(90, 1));
 				explicitwaitClick(editsubmit);
 				count++;
 				break;
@@ -233,6 +232,7 @@ public class ProjectPage extends BaseClass {
 			for (int i = 1; i <= listcount; i++) {
 				name = driver.findElement(By.xpath("//table/tbody/tr[" + i + "]/td[2]"));
 				if (name.getText().contains(ExcelRead.readStringData(74, 1))) {
+					Thread.sleep(1000);
 					explicitwaitClick(projectdelete);				
 					explicitwaitClick(projectdeletepopup);
 					Thread.sleep(1000);
