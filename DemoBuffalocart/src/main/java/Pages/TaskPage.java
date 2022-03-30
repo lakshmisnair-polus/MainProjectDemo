@@ -101,7 +101,7 @@ public class TaskPage extends BaseClass {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public Boolean subTabsPresent() throws InterruptedException {
-		implicitlyWait();
+		
 		if (Kanban.isDisplayed()) {
 			Gantt.isDisplayed();
 			return true;
@@ -110,7 +110,7 @@ public class TaskPage extends BaseClass {
 	}
 
 	public Boolean headerbtnsPresent() throws InterruptedException {
-		implicitlyWait();
+		
 		if (Addmultipletasks.isDisplayed()) {
 			Addtask.isDisplayed();
 			return true;

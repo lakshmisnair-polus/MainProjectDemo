@@ -252,11 +252,7 @@ public class ClientPage extends BaseClass {
 	}
 
 	public int editClients(String Clientname) throws IOException, InterruptedException {
-
-		// explicitwaitSendkeysClear(clientssearch);
-		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		// explicitwaitSendkeys(clientssearch, Clientname);
-		implicitlyWait();
+		
 		Thread.sleep(1000);
 
 		List<WebElement> Links = clientdatacheck;
@@ -278,7 +274,7 @@ public class ClientPage extends BaseClass {
 
 	public int deleteClients(String Clientname) throws InterruptedException, IOException {
 
-		implicitlyWait();
+		
 		int count = 0;
 		WebElement name = null;
 		for (int i = 2; i <= 10; i++) {

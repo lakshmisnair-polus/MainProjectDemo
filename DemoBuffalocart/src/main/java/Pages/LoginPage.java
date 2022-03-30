@@ -49,7 +49,7 @@ public class LoginPage extends BaseClass {
 	}
 
 	public String login(String usermail) throws IOException {
-	//	Usermail.sendKeys(ExcelRead.readStringData(5, 1));
+	
 		Usermail.sendKeys(usermail);
 		password.sendKeys(ExcelRead.readIntegerData(6, 1));
 		loginbtn.submit();

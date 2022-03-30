@@ -127,7 +127,6 @@ public class ClientTab extends BaseClass {
 	public void verifySearchingMultipleContacts() throws Exception {
 
 		clientpage = new ClientPage(driver);
-		implicitlyWait();
 		Thread.sleep(1000);
 		ExtentReportcreateTest(ExcelRead.readStringData(39, 1));
 		int count = clientpage.multiContactsSearch(ExcelRead.readStringData(58, 1));

@@ -195,7 +195,6 @@ public class BaseClass {
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
 
 		Robot robot = new Robot();
-		implicitlyWait();
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 		Thread.sleep(1000);

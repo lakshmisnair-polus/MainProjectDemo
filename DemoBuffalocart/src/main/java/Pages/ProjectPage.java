@@ -171,11 +171,9 @@ public class ProjectPage extends BaseClass {
 
 		JavascriptClick(addproject);
 		explicitwaitSendkeys(title, ExcelRead.readStringData(74, 1));
-		implicitlyWait();
 		description.sendKeys(ExcelRead.readStringData(85, 1));
 		start_date.sendKeys(ExcelRead.readIntegerData(86, 1));
 		deadline.sendKeys(ExcelRead.readIntegerData(87, 1));
-		implicitlyWait();
 		price.sendKeys(ExcelRead.readIntegerData(88, 1));
 
 		Actions actions = new Actions(driver);
@@ -185,7 +183,6 @@ public class ProjectPage extends BaseClass {
 		actions.sendKeys(Keys.PAGE_DOWN).build().perform();
 		actions.sendKeys(Keys.ENTER).build().perform();
 
-		implicitlyWait();
 		explicitwaitClick(submit);
 	}
 
