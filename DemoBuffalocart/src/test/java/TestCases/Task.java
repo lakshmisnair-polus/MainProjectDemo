@@ -82,7 +82,7 @@ public class Task extends BaseClass {
 			extendTestFail(ExcelRead.readStringData(97, 1));
 			Assert.assertTrue(false, ExcelRead.readStringData(97, 1));
 		}
-		screenshotCommon(driver);
+		//screenshotCommon(driver);
 	}
 
 	@AfterTest(groups = { "Functional" })

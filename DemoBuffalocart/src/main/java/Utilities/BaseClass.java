@@ -39,7 +39,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static ExtentReports extent;
 	public static ExtentTest test;
-	
+
 	public WebDriver launchBrowser1(String url) throws InterruptedException {
 
 		WebDriverManager.chromedriver().setup();
@@ -79,7 +79,7 @@ public class BaseClass {
 	public void screenshotfailed(WebDriver driver, String test) throws Exception {
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		File DestFile = new File("src\\test\\resources\\Screenshots\\" + test + timestamp() + ".png");
+		File DestFile = new File("test-output\\Screenshots\\" + test + timestamp() + ".png");
 		Files.copy(SrcFile, DestFile);
 	}
 
@@ -110,10 +110,10 @@ public class BaseClass {
 		test.fail("Testing Failed" + passString);
 	}
 
-	public static String getScreenshot(WebDriver driver) {
+	public String getScreenshot(WebDriver driver) {
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		File src = ts.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "/Screenshot/" + System.currentTimeMillis() + ".png";
+		File src = ts.getScreenshotAs(OutputType.FILE);	
+		String path = System.getProperty("user.dir") + "/Screenshot/" + timestamp() + ".png";
 		File destination = new File(path);
 		try {
 			FileUtils.copyFile(src, destination);
@@ -122,12 +122,12 @@ public class BaseClass {
 		}
 		return path;
 	}
-	@AfterMethod(groups = { "Functional" },alwaysRun=true)
-	public void tearDown(ITestResult result) throws IOException
-	{		
-		if(result.getStatus()==ITestResult.FAILURE)
-		{
-			String temp=getScreenshot(driver);			
+
+	@AfterMethod(groups = { "Functional" }, alwaysRun = true)
+	public void tearDown(ITestResult result) throws IOException {
+		if (result.getStatus() == ITestResult.FAILURE) {
+
+			String temp = getScreenshot(driver);
 			test.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}
 		extent.flush();
@@ -204,5 +204,5 @@ public class BaseClass {
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(1000);
-	}	
+	}
 }

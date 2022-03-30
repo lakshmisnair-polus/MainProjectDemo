@@ -25,10 +25,12 @@ public class Listener implements ITestListener {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult arg0) {
+	public void onTestFailure(ITestResult arg0 ) {
 		String name = arg0.getMethod().getMethodName();
+		
 		BaseClass objdriver = new BaseClass();
 		try {
+			
 			objdriver.screenshotfailed(objdriver.getDriver(), name);
 		} catch (Exception e) {
 			e.printStackTrace();
