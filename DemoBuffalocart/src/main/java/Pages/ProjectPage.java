@@ -115,7 +115,7 @@ public class ProjectPage extends BaseClass {
 	@FindBy(xpath = "//table[@id='project-table']/tbody/tr/td[2]")
 	private List<WebElement> projectdatacheck;
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	@FindBy(xpath = "//table[@id='project-table']/tbody/tr/td[9]/a[1]")
 	private WebElement projectedit;
@@ -123,7 +123,7 @@ public class ProjectPage extends BaseClass {
 	@FindBy(xpath = "//*[@id=\"project-form\"]/div[2]/button[2]")
 	private WebElement editsubmit;
 	
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	public void addlabel() throws IOException, InterruptedException {
 		project.click();
@@ -192,7 +192,6 @@ public class ProjectPage extends BaseClass {
 		String projectsearchdata = tabledata.getText();
 		table_filter.clear();
 		return projectsearchdata;
-
 	}
 
 	public int editProject() throws IOException, InterruptedException {
@@ -204,7 +203,7 @@ public class ProjectPage extends BaseClass {
 			WebElement we = iter.next();
 			String data = we.getText();
 			if (data.contains(ExcelRead.readStringData(74, 1))) {
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 				explicitwaitClick(projectedit);
 				explicitwaitSendkeys(title, ExcelRead.readStringData(90, 1));
 				explicitwaitClick(editsubmit);
@@ -228,11 +227,12 @@ public class ProjectPage extends BaseClass {
 			WebElement name = null;
 			for (int i = 1; i <= listcount; i++) {
 				name = driver.findElement(By.xpath("//table/tbody/tr[" + i + "]/td[2]"));
-				if (name.getText().contains(ExcelRead.readStringData(74, 1))) {
-					Thread.sleep(1000);
+				//explicitwaitgetText(name);
+				if (explicitwaitgetText(name).contains(ExcelRead.readStringData(74, 1))) {
+					//Thread.sleep(1000);
 					explicitwaitClick(projectdelete);				
 					explicitwaitClick(projectdeletepopup);
-					Thread.sleep(1000);
+					//Thread.sleep(1000);
 					count++;
 					break;
 				}

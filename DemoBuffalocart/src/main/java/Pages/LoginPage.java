@@ -55,7 +55,6 @@ public class LoginPage extends BaseClass {
 		loginbtn.submit();
 		String userName = username.getText();
 		return userName;
-
 	}
 	
 }

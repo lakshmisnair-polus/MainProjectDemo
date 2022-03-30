@@ -296,7 +296,7 @@ public class ClientPage extends BaseClass {
 	public void addingMultipleContacts(String Clientname) throws Exception {
 
 		clientpage = new ClientPage(driver);
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		contactdeleteclose.click();
 		explicitwaitClick(addclientbtn);
 		clientpage.addingClients(Clientname);

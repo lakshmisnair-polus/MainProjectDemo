@@ -14,12 +14,10 @@ public class ProjectTab extends BaseClass {
 
 	@Test(groups = { "Functional" }, enabled = true, priority = 19)
 	public void verifyAddingNewLabel() throws InterruptedException, IOException {
-
 		projectpage = new ProjectPage(driver);
 		projectpage.addlabel();
 		Assert.assertTrue(true, ExcelRead.readStringData(64, 1));
-		ExtentReportcreateTest(ExcelRead.readStringData(64, 1));		
-		
+		ExtentReportcreateTest(ExcelRead.readStringData(64, 1));				
 	}
 
 	@Test(groups = { "Functional" }, enabled = true, priority = 20)
