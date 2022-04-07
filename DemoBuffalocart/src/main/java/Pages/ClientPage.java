@@ -204,6 +204,9 @@ public class ClientPage extends BaseClass {
 
 	public String mandatoryValidations() {
 
+		
+		
+		
 		clientstab.click();
 		addclientbtn.click();
 		explicitwaitClick(addclientsave);
